@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/kaiyizhang/Dropbox/lab3/env
+exec_prefix=/Users/kaiyizhang/Dropbox/lab3/env
+libdir=/Users/kaiyizhang/Dropbox/lab3/env/lib
+includedir=/Users/kaiyizhang/Dropbox/lab3/env/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.4
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -D_THREAD_SAFE -pthread 
